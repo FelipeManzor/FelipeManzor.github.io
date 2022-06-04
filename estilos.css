@@ -1,7 +1,10 @@
-* {
-    border: blue solid 1px;
-}
+/*
+Para ver el boxmodel de la pagina
 
+* {
+    border: blue solid 1px; 
+}
+*/
 html {
     font-family: Helvetica, 'Merriweather', Verdana, Geneva, Tahoma, sans-serif, Arial, sans-serif;
 }
@@ -35,12 +38,30 @@ h4 {
     font-weight: bold;
 }
 
+.datoslaboralesyeducacionales h4 {
+    border-bottom: 1px solid transparent ;
+    border-image: linear-gradient(to right, black, white);
+    border-image-slice: 1;
+}
+
+.fecha {
+    float:right
+}
+
+.tiempototal {
+    color: black;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
 ul {
     display: block;
     list-style-type: disc;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     margin-bottom: 0;
+    margin: 0 auto;
+    align-self: center;
 }
 
 body {
@@ -48,6 +69,15 @@ body {
     text-align: center;
 }
 
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+a:hover {  /* Cuando pasa arriba el mouse */
+    color: gray;
+}
 
 
 #cabecera {
@@ -72,7 +102,7 @@ body {
 
 .header li {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     position: relative;
     margin-right: 24px;
   }
@@ -81,9 +111,10 @@ body {
     left: 0 ;
     float: left;
     flex-grow: 1;
-    margin-top: 15px;
+    margin: 0 auto;
     position: relative;
     padding-top: 0px;
+    align-self: center;
 }
 
 .header span {
@@ -133,24 +164,31 @@ body {
 }
 
 .resumenprofesional {
-    max-width: 1340px;
+    max-width: 1280px;
     display: inline-block;
-    margin: 20px 20px;
+    margin: 20px 40px;
 }
+
+@media screen and (max-width: 1325px) {  /* Funcion que redimensiona las skills al encoger la pagina */
+    .resumenprofesional {
+        max-width: 900px;
+        margin: 20px 20px;
+    }
+  }
 
 .skills {
     display: inline-block;
     position: relative;
     right: 0px;
     max-width:300px;
-    min-width: 20%; 
+    min-width: 300px; 
     align-items: flex-start;
     vertical-align: top;
     margin: 20px 20px;
     text-align: left;
 }
 
-@media screen and (max-width: 1325px) {
+@media screen and (max-width: 1325px) {  /* Funcion que redimensiona las skills al encoger la pagina */
     .skills {
         max-width: 900px;
     }
