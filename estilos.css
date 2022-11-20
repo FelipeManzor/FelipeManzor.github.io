@@ -109,7 +109,7 @@ a:hover {  /* Cuando pasa arriba el mouse */
   }
 
 .header .nombre {
-    left: 0 ;
+    left: 5px ;
     float: left;
     flex-grow: 1;
     margin: 0 auto;
