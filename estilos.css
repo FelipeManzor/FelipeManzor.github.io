@@ -254,6 +254,9 @@ a:hover {  /* Cuando pasa arriba el mouse */
     text-align: left;
     page-break-inside:avoid;
   }
+  #nombre {
+    margin: auto;
+  }
 }
 
 .datoslaboralesyeducacionales {
@@ -307,4 +310,9 @@ a {
 #nombregithub {
     transition: opacity 0.5s ease-in-out;
     margin-top: 35px;
+  }
+  .educacion {
+    max-width: 1300px;
+    align-self: center;
+    margin: auto;
   }
