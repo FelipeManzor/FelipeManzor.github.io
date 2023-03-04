@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="es">
+<html style="display: none;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,60 +7,110 @@
     <meta name="Keywords" content="Felipe Alenjandro Manzor Manzor CV, Perfil, Profile">
     <meta name="Description" content="Profesional TI, Tecnologias de la información, CV"> 
     <link rel='stylesheet' href='estilos.css'>
-    <script src="Java.js" defer async> </script>
+    <script src="Java.js" defer> </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Space+Mono&display=swap" rel="stylesheet"> 
     <title>Felipe Alejandro Manzor Manzor</title>
 </head>
 <body>
+    <div>
     <nav id="cabecera" class="header">
-        <span class="nombre">Felipe Alejandro Manzor Manzor</span>
+        <span><img class="imprmir" id="download" src="res\download.png"  alt="descargar PDF" onclick="window.print()"> <a href="https://github.com/FelipeManzor"><p class="nombre" id="nombregithub">Felipe Alejandro Manzor Manzor </p></a></span>
         <ul>
             <li><a href="#resumenprofesional">
-                Resumen Profesional
+                <div lang="es"> Resumen Profesional</div>
+                <div lang="en">Professional Summary</div>
             </a></li>
             <li> <a href="#educacion">
-                Educación
+                <div lang="es">Educación</div>
+                <div lang="en">Education</div>
             </a></li>
             <li><a href="#experiencialaboral">
-                Experienca Laboral
+                <div lang="es">Experienca Laboral </div>
+                <div lang="en">Laboral Experience </div>
             </a></li>
-            <li><button id="leng" type="button" onclick="changeLang()">~</button></li>
+            <li><div>
+            <img class="leng es" id="lenges" src="res\BanderaEspaña.png" alt="spanish" style="display:block;" onclick="changeLang()">
+            <img class="leng en" id="lengen" src="res\BanderaEngland.png" alt="english" style="display:none;" onclick="changeLang()">
+            </div></li>
         </ul>
     </nav>
     <header>
         <div class="encabezado">
         <h1 id="nombre" class="nombre">Felipe Alejandro Manzor Manzor</h1>
-        <img id="fotocv" src="PerfilFrenteMid.jpg" alt="FotoFormalCurriculum">
-        <h3 id="resumenprofesional">Ingeniero en Informacion y Control de Gestión </h3>
-        <h4>fmanzor@fen.uchile.cl</h4>    
+
+        <a lang="en" href="https://www.linkedin.com/in/famanzor/?locale=en_US"><img id="fotocv" src="res/PerfilFrenteMid.jpg" alt="FotoFormalCurriculum"> </a>
+        <a lang="es" href="https://www.linkedin.com/in/famanzor/"><img id="fotocv" src="res/PerfilFrenteMid.jpg" alt="FotoFormalCurriculum"> </a>
+        <div class="profesiondetitulo">   
+        <h3 class="resumenprofesional"><div lang="es">Master en IT/CS - Ingeniero en Informacion y Control de Gestión</div>
+        <div lang="en">IT Master from QUT, BS in information systems</div></h3>
         </div>
+        <h4><a href="mailto:felipealejandro.manzormanzor@connect.qut.edu.au?cc=fmanzor@fen.uchile.cl&subject=Open Position&body=Thank you for emailing me. I will reply to you soon.">felipealejandro.manzormanzor@connect.qut.edu.au</a></h4>    
+        <h4><a href="mailto:fmanzor@fen.uchile.cl?cc=felipealejandro.manzormanzor@connect.qut.edu.au">fmanzor@fen.uchile.cl</a></h4>
+        </div>
+        <p></p>
     </header>
-    <section class="resumenprofesional">
+    <section id="resumenprofesional">
         <div>
-            <h2>Resumen Profesional</h2>
-            <p id="educacion">Ingeniero en información y Control de Gestión, Facultad de Economía y Negocios, Universidad de Chile, bilingüe. He adquirido conocimientos en las áreas financiera-contable, control de gestión y operaciones. Poseo habilidades de liderazgo y me adapto con facilidad a los diferentes entornos que se me presentan. Soy una persona emprendedora y autodidacta.</p>
+            <h2 lang="es">Resumen Profesional</h2>
+            <h2 lang="en">Professional Summary</h2>
+            <br id="educacion">
+            <p class="educacion" lang="es">
+                Ingeniero en información y Control de Gestión, Facultad de Economía y Negocios, Universidad de Chile, bilingüe. He adquirido conocimientos en las áreas financiera-contable, control de gestión y operaciones. Poseo habilidades de liderazgo y me adapto con facilidad a los diferentes entornos que se me presentan. Soy una persona emprendedora y autodidacta.
+            </p>
+            <p class="educacion" lang="en">
+                With extensive experience in programming, security, and database development, I have a strong track record of delivering results with great attention to detail. I am dedicated to driving innovation and continuously improving processes to enhance business performance. My expertise in relational databases and addressing user concerns has enabled me to deliver effective solutions that align with business objectives. I am committed to keeping up to date with the latest technologies and industry trends to provide innovative and practical solutions.
+            </p>
         </div>
     </section>
+    <div></div>
     <section class="datoslaboralesyeducacionales">
         <div>
         </div>
-        <div>
+        <div lang="es">
             <h2>Educación</h2>
+            <h3>Universidad Tecnologica de Queensland</h3>
+            <h4>Master en Tecnologias de la Informacion<b class="fecha">2023-2025</b></h4>
+            <p>Miembro de los clubs de Programacion,White Hacking, Analitics y escalada</p>
             <h3>Universidad de Chile</h3>
             <h4>Ingeniero en Información y Control de Gestión <b class="fecha">2011-2017</b></h4>
             <p>Dentro de mis años de estudiante realice un intercambio en Cánada, fui ayudante de varios cursos y de investigación.</p>
             <h4>Diplomado en Finanzas <b class="fecha">2019-2020</b></h4>
             <h3>Universidad Católica de Chile</h3>
-            <h4  id="experiencialaboral">Diplomado en Data Science <b class="fecha">2018-2019</b></h4>
-            <p></p>
+            <h4>Diplomado en Data Science <b class="fecha">2018-2019</b></h4>
         </div>
-        <div>
-            <h2>Experiencia Laboral</h2>
-            <h3>Principal Financial Group <b class="tiempototal">3 meses</b></h3>
+        <div lang="en">
+            <h2>Education</h2>
+            <h3>Queensland University of Technology</h3>
+            <h4>Master of Information Technologies - Computer Science<b class="fecha">2023-2025</b></h4>
+            <p>Clubs: Law and IT, Data Analytics , code and White hat
+                </p>
+            <h3>Universidad de Chile(University of Chili)</h3>
+            <h4>Information and control management engineer<b class="fecha">2011-2017</b></h4>
+            <p>
+                <ul>
+                    <li>International Exchange to Canada in the Emerging Leaders of America program.</li>
+                    <li>Teacher assistant in Algebra and Programming courses.</li>
+                    <li>Research assistant in statistics that results in a publication in 2019 and an Acknowledgement at The University of Chicago Press Journal</li>
+                </ul>
+                  
+                </p>
+            <h4>Finance Diploma<b class="fecha">2019-2020</b></h4>
+            <h3>Universidad Católica de Chile (Chatholic University of Chile)</h3>
+            <h4>Data Science Diploma<b class="fecha">2018-2019</b></h4>
+        </div>
+        <p id="experiencialaboral"></p>
+        <div lang="es">
+            <h2>Experiencia Profesional</h2>
+            <h3>Principal Financial Group <b class="tiempototal">2 años</b></h3>
             <h4>Analista de Datos <b class="fecha">2020-2022</b></h4>
-            <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+            <p>
+Genera reportes corporativa en materia de cumplimiento.</p>
+<p>Automatiza información y genera patrones para el lavado de activos.</p>
+<p>Realiza QA a nuevo sistema de gestión interna.</p>
+<p>Desarrolla herramienta de lectura de correos para evitar filtración de información.
+            </p>
             <h3>Colbún</h3>
             <h4>Analista de Compensaciones <b class="fecha">2020</b></h4>
             <p>Genera reporteria del area</p>
@@ -82,30 +132,110 @@
             <h4>Practica Profesional<b class="fecha">2017-2018</b></h4>
             <p>Automatiza reportes para Data Manager, Project Manager y Credit Manager, creación de reportes de crédito para el área de finanzas y manejo de stock para inventario. </p>
         </div>
+        <div lang="en">
+            <h2>Professional Experience</h2>
+            <h3>Principal Financial Group <b class="tiempototal">2 years, 1 month</b></h3>
+            <h4>Data Analyst<b class="fecha">2020-2022</b></h4>
+            <p>Worked for money laundering and terrorist financing prevention unit.
+                <ul>
+                <li>Created and maintained fraud detection patterns from databases using SQL and Scala.</li>
+                <li>Participated in the creation of a Data Loss Prevention(DLP) Algorithm(implemented in python).</li>
+                <li>Prepared data in data lake within Azure Databricks (python & R).</li>
+                <li>Prepared several reports in power bi.</li>
+                <li>Analyzed local email monitoring.</li>
+                <li>Prepared AML models.</li>
+                <li>Prepared and maintain several automation processes.</li>
+            </ul></p>
+            <h3>Colbún <b class="tiempototal">9 months</b></h3>
+            <h4>Compensation Analyst<b class="fecha">2020</b></h4>
+            <p></p>
+            <ul>
+                <li>Created several reports for HHRR area.</li>
+                <li>Supuported SAP success factors requirements</li>
+            </ul>
+            <h3>Sernageomin <b class="tiempototal">11 months</b></h3>
+            <h4>Internal Audit<b class="fecha">2019</b></h4>
+            <p></p>
+            <ul>
+                <li>
+                    Developed requirements of the tracking system for the audit area.
+                </li>
+                <li>
+                    Supported audit database maintenance 
+                </li>
+                <li>
+                    Created reports that monitor the publication of information on mining governmental websites (web-scrapping)
+                </li>
+            </ul>
+            <h3>L'Oreal Chile <b class="tiempototal">2 years, 2 months</b></h3>
+            <h4>Inventory manager <b class="tiempototal">1 year, 6 months</b> <b class="fecha">2018-2019</b></h4>
+            <ul>
+                <li>
+                    Evaluated RFID implementation in Chile.  
+                </li>
+                <li>
+                    Created inventory procedures based on 6S and Lean.   
+                </li>
+                <li>
+                    Created the calendarization of inventory for Chile.  
+                </li>
+                <li>
+                    Integrated information to improve report accuracy trough Power Bi and stablish SLA between areas.   
+                </li>
+                <li>
+                    Supervised inventory team (6 people) 
+                </li>
+            </ul>
+            <h4>New projects coordinator <b class="tiempototal">3 months</b> <b class="fecha">2018</b></h4>
+            <ul>
+                <li>
+                    Developed several processes for logistic and inventory area  
+                </li>
+                <li>
+                    Created model for document management that result in the capability of locate documents within the company.
+                </li>
+            </ul>
+            <h4>Practica Profesional <b class="tiempototal">6 months</b> <b class="fecha">2017-2018</b></h4>
+            <ul>
+                <li>
+                    Developed report automation for several areas and procedures improvements working with operational data using access, python, and R.
+                </li>
+            </ul>
+        </div>
+
         <div>
         </div>
     </section>
     <aside class="skills">
-        <h2>Habilidades Computacionales y Lenguajes</h2>
+        <div lang="es"><h2>Habilidades Computacionales y Lenguajes</h2></div>
+        <div lang="en"><h2>Skills</h2></div>
         <ul>
-            <li>SQL</li>
-            <li>Python</li>
-            <li>R</li>
-            <li>C#</li>
-            <li>Vb</li>
-            <li>HTML-CSS</li>
-            <li>JavaScript</li>
-            <li>Herramientas de ETL</li>
-            <li>Ofimatica</li>
-            <li>Herramientas de visualización</li>
-            <li>Modelamiento de procesos</li>
-        </ul>
-        <h2>Proyectos Personales</h2>
+            <li><a>SQL</a></li>
+            <li><a>Python</a></li>
+            <li><a>Scala</a></li>
+            <li><a>R</a></li>
+            <li><a>C#</a></li>
+            <li><a>Vb</a></li>
+            <li><a>HTML-CSS</a></li>
+            <li><a>JavaScript</a></li>
+
+            <li lang="es"><a>Herramientas de ETL</a></li>
+            <li lang="es"><a>Ofimatica</a></li>
+            <li lang="es"><a>Herramientas de visualización</a></li>
+            <li lang="es"><a>Modelamiento de procesos</a></li>
+            <li lang="en"><a>ETL tools</a></li>
+            <li lang="en"><a>Office</a></li>
+            <li lang="en"><a>Visualization Tools</a></li>
+            <li lang="en"><a>Process modeling</a></li>
+<!--         </ul>
+    This is a comment in HTML        <h2>Proyectos Personales</h2>
         <ul>
             <li>Sunploit</li>
             <li>(en Desarollo, proximo a ser lanzado)</li>
-        </ul>
+        </ul>--> 
     </aside>
+</div>
+</div>
     <footer>Gracias por visitar mi perfil</footer>
     </body>
 </html>
