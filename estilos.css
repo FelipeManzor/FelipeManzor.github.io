@@ -7,6 +7,7 @@ Para ver el boxmodel de la pagina
 */
 html {
     font-family: Helvetica, 'Merriweather', Verdana, Geneva, Tahoma, sans-serif, Arial, sans-serif;
+    min-width: 600px;
 }
 
 h1 {
@@ -16,6 +17,20 @@ h1 {
 
 h2 { 
     display: block;
+}
+
+h2.li {
+    display: list-item;
+}
+
+.leng { 
+    background-size:cover;
+    height:30px;
+    width:30px;
+    font-size: 0.6rem;
+    border:none;
+    text-align: center;
+    background-color: white;
 }
 
 
@@ -60,7 +75,7 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     margin-bottom: 0;
-    margin: 0 auto;
+    margin: 0;
     align-self: center;
 }
 
@@ -97,7 +112,7 @@ a:hover {  /* Cuando pasa arriba el mouse */
     display: flex;
     background-color: white;
     position: relative;
-
+    justify-content: space-between;
 }
 
 
@@ -109,10 +124,11 @@ a:hover {  /* Cuando pasa arriba el mouse */
   }
 
 .header .nombre {
-    left: 5px ;
+    left: 15px ;
     float: left;
     flex-grow: 1;
-    margin: 0 auto;
+    margin-bottom: 0xp;
+    margin-top: 30px;
     position: relative;
     padding-top: 0px;
     align-self: center;
@@ -166,7 +182,7 @@ a:hover {  /* Cuando pasa arriba el mouse */
 
 .resumenprofesional {
     max-width: 1280px;
-    display: inline-block;
+    display: block;
     margin: 20px 40px;
 }
 
@@ -195,6 +211,51 @@ a:hover {  /* Cuando pasa arriba el mouse */
     }
   }
 
+  @media (max-width: 900px) {  /* Funcion que redimensiona las skills al encoger la pagina */
+    p.nombre {
+        display: none;
+    }
+    .header{
+        justify-content: center;
+    }
+  }
+
+  @media (max-width: 600px) {  /* Funcion que redimensiona las skills al encoger la pagina */
+    #lenges {
+        display: none;
+    }
+  }
+
+  @media print {
+    /* Hide the button when printing */
+    .imprimir {
+      display: none;
+    }
+    #fotocv{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+  section {
+    display: block;
+  }
+  section.datoslaboralesyeducacionales {
+    display: block;
+    margin: 0px;
+    max-width: auto;
+  }
+  aside.skills {
+    align-self:initial;
+    justify-self: left;
+    display: inline;
+  }
+  body{
+    text-align: left;
+    page-break-inside:avoid;
+  }
+}
+
 .datoslaboralesyeducacionales {
     display: inline-block;
     position:relative;
@@ -205,3 +266,45 @@ a:hover {  /* Cuando pasa arriba el mouse */
     text-align: left;
 
 }
+
+#resumenprofesional {
+    align-items: center;
+}
+.profesiondetitulo {
+    display: inline-flex;
+}
+
+.div {
+    align-items: center;
+    align-content: center;
+}
+
+#download {
+    display: block;
+    width:20px;
+    height: 25px;
+    margin: 25px 20px;
+}
+
+.aside.skills {
+    display: inline-block;
+}
+
+a:hover {
+    cursor: pointer;
+  }
+img:hover {
+    cursor: pointer;
+}
+p.nombre:hover {
+    cursor: pointer;
+}
+
+a { 
+    transition: all 0.5s ease-in-out;
+}
+
+#nombregithub {
+    transition: opacity 0.5s ease-in-out;
+    margin-top: 35px;
+  }
